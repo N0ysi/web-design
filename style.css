@@ -22,11 +22,15 @@ div {
     width: 100%;
 }
 
+section{
+    margin-bottom: 30px;
+}
+
 .container {
     display: grid;
+    max-width: 1500px;
     justify-items: center;
     margin: 0 auto;
-    margin-bottom: 20px;
     height: inherit;
 }
 
@@ -66,7 +70,7 @@ nav {
     height: 40px;
     border-radius: 10px;
     background: #39394C;
-    justify-content: flex-end;
+    justify-content: flex-start;
     box-shadow: 5px 4px 4px 0px #00000080 inset;
 }
 
@@ -88,7 +92,7 @@ nav {
     border-radius: 10px;
     border: none;
     background-color: transparent;
-
+    margin-left: 35px;
 }
 
 .search label {
@@ -136,16 +140,14 @@ header button {
     }
 
     .search {
-        display: flex;
-        align-items: center;
         width: -webkit-fill-available;
         max-width: 25%;
         height: 40px;
-        border-radius: 100px;
-        background: #39394C;
         justify-content: flex-end;
-        justify-content: flex-end;
-        box-shadow: 5px 4px 4px 0px #00000080 inset;
+    }
+
+    .search input {
+        margin: 0;
     }
 
     .hamburgermenu {
@@ -158,7 +160,6 @@ header button {
     .search input {
         width: 100%;
         height: inherit;
-        margin-left: 30px;
         border-radius: 10px;
         border: none;
         background-color: transparent;
@@ -182,6 +183,8 @@ header button {
 .mainPhoto {
     width: inherit;
     height: inherit;
+    max-height: 500px;
+
 }
 
 .photo button img {
@@ -266,7 +269,6 @@ h3 {
     border-radius: 3px;
     background: #D9D9D9;
     gap: 15px;
-    max-width: 380px;
 }
 
 .article img {
@@ -384,15 +386,21 @@ h3 {
 
     .mainTitle h1,
     h3 {
+        height: 40px;
         border-radius: 0;
     }
 
     .mainTitle h2 {
+        height: 40px;
         border-radius: 0;
     }
 
     .articles {
         justify-content: space-around;
+    }
+
+    .article{
+        max-width: 380px;
     }
 
     .title {
@@ -410,7 +418,40 @@ h3 {
         width: 90px;
         height: 25px;
         font-size: 10px;
-        line-height: 11px;
+    }
+}
+
+@media (min-width:1000px) {
+
+    .mainTitle h1,
+    h3 {
+        font-size: 20px;
+    }
+
+    .mainTitle h2 {
+        font-size: 20px;
+    }
+
+    .article{
+        max-width: 500px;
+        height: 200px;
+    }
+
+    .title {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .description {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .btn,
+    .readMoreBtn {
+        width: 120px;
+        height: 30px;
+        font-size: 15px;
     }
 }
 
@@ -430,7 +471,6 @@ h3 {
     align-items: center;
     justify-content: center;
     margin: 0 10px;
-    max-width: 200px;
 }
 
 .plan .text {
@@ -462,6 +502,7 @@ h3 {
     .plan {
         width: 30%;
         height: 100px;
+        max-width: 200px;
     }
 
     .planTitle {
@@ -472,6 +513,24 @@ h3 {
     .plan p {
         font-size: 10px;
         line-height: 12px;
+    }
+}
+
+@media (min-width:1000px){
+    .plan {
+        width: 30%;
+        height: 150px;    
+        max-width: 300px;
+    }
+
+    .planTitle {
+        font-size: 23px;
+        line-height: 19px;
+    }
+
+    .plan p {
+        font-size: 15px;
+        line-height: 15px;
     }
 }
 
