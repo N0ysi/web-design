@@ -331,6 +331,7 @@ h3 {
 }
 
 .btn {
+    display: flex;
     margin-top: 10px;
     width: 63px;
     height: 13px;
@@ -342,6 +343,8 @@ h3 {
     line-height: 11px;
     text-align: center;
     color: #39394C;
+    align-items: center;
+    justify-content: center;
 }
 
 .readMoreBtn {
@@ -564,14 +567,22 @@ h3 {
 footer {
     display: flex;
     padding: 5px;
-    border-style: solid;
-    border-radius: 20px 20px 0 0;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: linear-gradient(90deg, hsla(256, 10%, 53%, 1) 0%, hsla(231, 22%, 18%, 1) 100%);
 }
 
-.other,
-.socials {
+.other {
     display: flex;
+    width: max-content;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.socials{
+    display: flex;
+    width: max-content;
     justify-content: center;
 }
 
@@ -580,17 +591,61 @@ footer a {
     font-size: 10px;
     color: #FFFFFF;
     text-decoration: none;
-    margin: 0 5px;
+    margin-right: 5px;
 }
 
 footer hr {
-    margin: 0;
-    size: 2;
+    margin: 10px 0;
+    width: 90%;
 }
 
-footer img {
-    width: 30px;
-    height: 30px;
+.footerDiv{
+    display: flex;
+    margin: 0 5%;
+    justify-content: space-around;
+}
+
+.footerLogo{
+    width: 40%;
+}
+
+.info{
+    display: grid;
+    width: auto;
+    justify-content: start;
+}
+
+footer .title{
+    font-size: 6px;
+    text-decoration: underline;
+    color: #B3B1BC;
+}
+
+.other img{
+    width: 12px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+.other p{
+    display: flex;
+    font-size: 4px;
+    color: #B3B1BC;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.socials img {
+    width: 10px;
+    height: 10px;
+}
+
+.disclaimer{
+    display: flex;
+    font-size: 3.5px;
+    color: #B3B1BC;
+    align-items: center;
+    text-decoration: underline;
 }
 
 @media (min-width: 600px) {
