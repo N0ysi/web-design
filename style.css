@@ -132,6 +132,7 @@ header button {
 
     nav {
         display: flex;
+        max-width: 700px;
         width: -webkit-fill-available;
         align-items: center;
         justify-content: space-around;
@@ -499,6 +500,7 @@ h3 {
     font-size: 14px;
     font-weight: 400;
     line-height: 17.56px;
+    color: #B3B1BC;
     text-align: left;
 }
 
@@ -512,6 +514,7 @@ h3 {
     font-weight: 400;
     line-height: 10.03px;
     text-align: left;
+    color: #B3B1BC;
 }
 
 @media (min-width: 600px) {
@@ -532,10 +535,6 @@ h3 {
         width: 100%;
     }
 
-    .plan p{
-        color: #B3B1BC;
-    }
-
     .defaultPlan {
         display: grid;
         font-family: 'Kumar One';
@@ -543,7 +542,6 @@ h3 {
         text-align: center;
         font-size: 17px;
         line-height: 19px;
-        color: #B3B1BC;
         justify-content: end;
     }
 
@@ -554,7 +552,6 @@ h3 {
         text-align: center;
         font-size: 17px;
         line-height: 19px;
-        color: #B3B1BC;
         justify-content: start;
     }
 
@@ -633,43 +630,123 @@ h3 {
 }
 
 section#ContactUs {
-    display: none;
+    display: block;
 }
 
-@media (min-width: 800px) {
-    section#ContactUs {
-        display: block;
+.contactUsDiv {
+    display: flex;
+    gap: 5px;
+}
+
+.contactUsDiv img {
+    border-radius: 5px;
+    width: 30%;
+}
+
+.contactUsDiv .mainTitle {
+    display: flex;
+    border: none;
+    margin: 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.contactUsDiv .mainTitle h3 {
+    display: grid;
+    height: 80px;
+    width: 95%;
+    padding-right: 2%;
+    font-size: 12px;
+    justify-items: end;
+    align-content: center;
+    background-color: #B3B1BC;
+    color: #39394C;
+    max-width: 800px;
+}
+
+.contactUsDiv .mainTitle h3 p {
+    max-width: 270px;
+    width: 40%;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.contactUsDiv .mainTitle hr {
+    width: 100%;
+    height: 2px;
+    margin: 0;
+    background-color: #39394C;
+}
+
+.inputDiv {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 810px;
+    justify-items: center;
+    gap: 10px;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+.inputDiv input{
+    font-family: 'Kumar One';
+    width: 90%;
+    height: 15%;
+    margin: 0 5%;
+    border-radius: 10px;
+    background-color: #C7C7C7;
+    padding-left: 10px;
+    border-width: 1px;
+}
+
+.inputDiv input.textInput{
+    height: 45%;
+}
+
+.inputDiv button{
+    font-family: 'Kumar One';
+    color: #232931;
+    width: 80px;
+    height: 20px;
+    border-radius: 8px;
+    font-size: 10px;
+    margin: 0;
+    line-height: 5px;
+}
+
+@media (min-width:520px){
+    .contactUsDiv .mainTitle h3 p {
+        width: 35%;
     }
+}
+
+
+@media (min-width:600px){
+    .contactUsDiv .mainTitle h3 p {
+        width: 28%;
+    }
+}
+
+@media (min-width:750px){
+    .contactUsDiv .mainTitle h3 p {
+        width: 26%;
+    }
+}
+
+
+
+@media (min-width: 800px) {
 
     .contactUsDiv {
-        display: flex;
         gap: 10px;
     }
 
-    .contactUsDiv img {
-        border-radius: 5px;
-        width: 30%;
-    }
-
-    .contactUsDiv .mainTitle {
-        display: flex;
-        border: none;
-        margin: 0;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
     .contactUsDiv .mainTitle h3 {
-        display: grid;
-        height: 130px;
         width: 95%;
-        padding-right: 3%;
+        height: 130px;
         font-size: 25px;
         line-height: 30px;
-        justify-items: end;
-        align-content: center;
-        color: #39394C;
-        max-width: 800px;
     }
 
     .contactUsDiv .mainTitle h3 p {
@@ -680,59 +757,25 @@ section#ContactUs {
     }
 
     .contactUsDiv .mainTitle hr {
-        width: 100%;
         height: 3px;
-        margin: 0;
         margin-top: 8px;
-        background-color: #39394C;
     }
 
     .inputDiv {
-        margin-top: 10px;
-        display: flex;
-        flex-wrap: wrap;
         max-width: 810px;
-        justify-items: center;
         gap: 12px;
-        align-content: flex-start;
-        justify-content: center;
-    }
-
-    .inputDiv input{
-        font-family: 'Kumar One';
-        width: 90%;
-        height: 10%;
-        margin: 0 5%;
-        border-radius: 10px;
-        background-color: #C7C7C7;
-        padding-left: 10px;
-        border-width: 1px;
     }
 
     .inputDiv input.textInput{
         height: 55%;
     }
 
-    .inputDiv button{
-        font-family: 'Kumar One';
-        color: #232931;
-        width: 80px;
-        height: 20px;
-        border-radius: 8px;
-        font-size: 10px;
-        margin: 0;
-        line-height: 5px;
-    }
 }
 
 
 @media (min-width:900px) {
     .contactUsDiv img {
         width: 30%;
-    }
-
-    .inputDiv input{
-        height: 15%;
     }
 
     .inputDiv input.textInput{
