@@ -110,6 +110,7 @@ header button {
     width: auto;
     height: inherit;
     padding: 0;
+    background-color: #F4F4F4;
 }
 
 .profile {
