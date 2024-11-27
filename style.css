@@ -689,7 +689,7 @@ section#ContactUs {
     justify-content: center;
 }
 
-.inputDiv input{
+.inputDiv input {
     font-family: 'Kumar One';
     width: 90%;
     height: 15%;
@@ -700,11 +700,11 @@ section#ContactUs {
     border-width: 1px;
 }
 
-.inputDiv input.textInput{
+.inputDiv input.textInput {
     height: 45%;
 }
 
-.inputDiv button{
+.inputDiv button {
     font-family: 'Kumar One';
     color: #232931;
     width: 80px;
@@ -715,20 +715,20 @@ section#ContactUs {
     line-height: 5px;
 }
 
-@media (min-width:520px){
+@media (min-width:520px) {
     .contactUsDiv .mainTitle h3 p {
         width: 35%;
     }
 }
 
 
-@media (min-width:600px){
+@media (min-width:600px) {
     .contactUsDiv .mainTitle h3 p {
         width: 28%;
     }
 }
 
-@media (min-width:750px){
+@media (min-width:750px) {
     .contactUsDiv .mainTitle h3 p {
         width: 26%;
     }
@@ -766,7 +766,7 @@ section#ContactUs {
         gap: 12px;
     }
 
-    .inputDiv input.textInput{
+    .inputDiv input.textInput {
         height: 55%;
     }
 
@@ -778,7 +778,7 @@ section#ContactUs {
         width: 30%;
     }
 
-    .inputDiv input.textInput{
+    .inputDiv input.textInput {
         height: 80%;
     }
 
@@ -794,26 +794,26 @@ section#ContactUs {
 
 }
 
-@media(min-width:1000px){
+@media(min-width:1000px) {
 
-    .contactUsDiv img{
+    .contactUsDiv img {
         width: 35%;
     }
 
-    .inputDiv{
+    .inputDiv {
         margin-top: 20px;
-        gap:15px;
+        gap: 15px;
     }
 
-    .inputDiv input{
+    .inputDiv input {
         height: 20%;
     }
 
-    .inputDiv input.textInput{
+    .inputDiv input.textInput {
         height: 70%;
     }
 
-    .inputDiv button{
+    .inputDiv button {
         font-family: 'Kumar One';
         color: #232931;
         width: 100px;
@@ -826,18 +826,18 @@ section#ContactUs {
 
 }
 
-@media(min-width:1200px){
+@media(min-width:1200px) {
 
-    .inputDiv{
+    .inputDiv {
         margin-top: 15px;
-        gap:20px;
+        gap: 20px;
     }
 
-    .inputDiv input{
+    .inputDiv input {
         height: 30%;
     }
 
-    .inputDiv input.textInput{
+    .inputDiv input.textInput {
         height: 90%;
     }
 }
@@ -889,11 +889,12 @@ footer hr {
 
 .info {
     display: grid;
-    width: auto;
-    justify-content: start;
+    width: fit-content;
+    justify-content: space-between;
 }
 
 .info .title {
+    width: fit-content;
     font-size: 6px;
     text-decoration: underline;
     color: #B3B1BC;
@@ -919,11 +920,25 @@ footer hr {
 }
 
 .disclaimer {
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.disclaimer p {
+    width: fit-content;
     display: flex;
     font-size: 3.5px;
+    margin-top: 3px;
     color: #B3B1BC;
     align-items: center;
-    text-decoration: underline;
+}
+
+.copyrightImg {
+    width: 8px;
+    height: 8px;
+    margin-right: 2px;
 }
 
 @media (min-width: 600px) {
@@ -940,12 +955,17 @@ footer hr {
         font-size: 8px;
     }
 
-    .disclaimer {
+    .disclaimer p {
         font-size: 7px;
     }
 
     .footerLogo {
         height: 100%;
+    }
+
+    .copyrightImg {
+        width: 10px;
+        height: 10px;
     }
 
     .socials img {
@@ -968,8 +988,13 @@ footer hr {
         font-size: 10px;
     }
 
-    .disclaimer {
+    .disclaimer p {
         font-size: 9px;
+    }
+
+    .copyrightImg {
+        width: 15px;
+        height: 15px;
     }
 
     .socials img {
