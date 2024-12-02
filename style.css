@@ -1,3 +1,16 @@
+:root {
+    --foreground: #39394C;
+    --foreground2: #B3B1BC;
+    --foreground3: #EDF2F4;
+    --foreground4: #232931;
+    --background: #F4F4F4;
+    --background2: #39394C;
+    --background3: #C7C7C7;
+    --background4: #B3B1BC;
+    --border-color: #D9D9D9;
+    --border-radius: 100px;
+}
+
 html {
     vertical-align: baseline;
     scroll-behavior: smooth;
@@ -13,7 +26,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Kumar One', sans-serif;
-    color: #EDF2F4;
+    color: var(--foreground3);
     overflow-wrap: normal;
 }
 
@@ -47,7 +60,7 @@ header {
     width: 100%;
     height: 52px;
     gap: 25px;
-    background: #F4F4F4;
+    background: var(--background);
     align-items: center;
     justify-content: space-between;
     filter: drop-shadow(5px 10px 8px rgba(0, 0, 0, 0.5));
@@ -74,7 +87,7 @@ nav {
     width: 40%;
     height: 40px;
     border-radius: 10px;
-    background: #39394C;
+    background: var(--background2);
     justify-content: flex-start;
     box-shadow: 5px 4px 4px 0px #00000080 inset;
 }
@@ -110,7 +123,7 @@ header button {
     width: auto;
     height: inherit;
     padding: 0;
-    background-color: #F4F4F4;
+    background-color: var(--background);
 }
 
 .profile {
@@ -124,7 +137,6 @@ header button {
         width: 100%;
         height: 119px;
         gap: 0;
-        background: #F4F4F4;
         align-items: center;
         justify-content: space-around;
         margin-bottom: 20px;
@@ -142,7 +154,7 @@ header button {
     nav a {
         font-size: 15px;
         text-decoration: none;
-        color: #232931;
+        color: var(--foreground4);
         margin: 0 5px;
     }
 
@@ -198,7 +210,7 @@ header button {
 }
 
 .photo button img {
-    color: #39394C;
+    color: var(--foreground);
 }
 
 .leftBtn {
@@ -223,7 +235,7 @@ header button {
     margin-bottom: 30px;
     border-width: 2px;
     border-style: solid;
-    border-color: #D9D9D9;
+    border-color: var(--border-color);
     border-left: none;
     border-right: none;
 }
@@ -346,7 +358,7 @@ article hr {
     font-weight: 400;
     line-height: 11px;
     text-align: center;
-    color: #39394C;
+    color: var(--foreground);
     align-items: center;
     justify-content: center;
 }
@@ -364,7 +376,7 @@ article hr {
     line-height: 11px;
     text-align: left;
     padding: 0;
-    background-color: #39394C;
+    background-color: var(--background2);
     color: #FFFFFF;
 }
 
@@ -393,6 +405,7 @@ article hr {
 }
 
 @media (min-width: 840px) {
+
     .mainTitle h1,
     h3 {
         height: 40px;
@@ -496,7 +509,7 @@ article hr {
     margin: 0;
     border-radius: 5px;
     border: none;
-    background-color: #C7C7C7;
+    background-color: var(--background3);
 }
 
 .planTitle {
@@ -507,7 +520,7 @@ article hr {
     text-align: center;
     font-size: 17px;
     line-height: 19px;
-    color: #B3B1BC;
+    color: var(--foreground2);
     justify-content: center;
 }
 
@@ -515,7 +528,7 @@ article hr {
     display: block;
     margin: 5px 0;
     height: 1px;
-    background-color: #B3B1BC;
+    background-color: var(--background4);
     width: 100%
 }
 
@@ -526,7 +539,7 @@ article hr {
     font-weight: 400;
     line-height: 10.03px;
     text-align: left;
-    color: #B3B1BC;
+    color: var(--foreground2);
 }
 
 @media (min-width: 600px) {
@@ -614,8 +627,8 @@ section#ContactUs {
     font-size: 12px;
     justify-items: end;
     align-content: center;
-    background-color: #B3B1BC;
-    color: #39394C;
+    background-color: var(--background4);
+    color: var(--foreground);
     max-width: 800px;
 }
 
@@ -630,7 +643,7 @@ section#ContactUs {
     width: 100%;
     height: 2px;
     margin: 0;
-    background-color: #39394C;
+    background-color: var(--background2);
 }
 
 .inputDiv {
@@ -651,7 +664,7 @@ section#ContactUs {
     margin: 0 5%;
     font-size: 10px;
     border-radius: 10px;
-    background-color: #C7C7C7;
+    background-color: var(--background3);
     padding-left: 10px;
     border-width: 1px;
 }
@@ -662,7 +675,7 @@ section#ContactUs {
     width: 90%;
     margin: 0 5%;
     height: 45%;
-    background-color: #C7C7C7;
+    background-color: var(--background3);
     border-width: 1px;
     text-align: start;
     border-color: #282839;
@@ -699,7 +712,7 @@ section#ContactUs {
         width: 28%;
     }
 
-    .inputDiv input{
+    .inputDiv input {
         font-size: 12px;
     }
 
@@ -747,7 +760,7 @@ section#ContactUs {
         gap: 12px;
     }
 
-    .inputDiv input{
+    .inputDiv input {
         font-size: 15px;
     }
 
@@ -774,7 +787,7 @@ section#ContactUs {
     .contactUsDiv .mainTitle h3 {
         font-size: 30px;
         line-height: 30px;
-        color: #39394C;
+        color: var(--foreground);
     }
 
     .contactUsDiv .mainTitle h3 p {
@@ -886,7 +899,7 @@ footer hr {
     width: fit-content;
     font-size: 6px;
     text-decoration: underline;
-    color: #B3B1BC;
+    color: var(--background2);
 }
 
 .other img {
@@ -898,7 +911,7 @@ footer hr {
 .other p {
     display: flex;
     font-size: 4px;
-    color: #B3B1BC;
+    color: var(--foreground2);
     align-items: center;
     margin-bottom: 3px;
 }
@@ -920,7 +933,7 @@ footer hr {
     display: flex;
     font-size: 3.5px;
     margin-top: 3px;
-    color: #B3B1BC;
+    color: var(--foreground2);
     align-items: center;
 }
 
