@@ -646,7 +646,7 @@ section#ContactUs {
     background-color: var(--background2);
 }
 
-.inputDiv {
+aside {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -657,7 +657,7 @@ section#ContactUs {
     justify-content: center;
 }
 
-.inputDiv input {
+aside input {
     font-family: 'Kumar One';
     width: 90%;
     height: 15%;
@@ -669,7 +669,7 @@ section#ContactUs {
     border-width: 1px;
 }
 
-.inputDiv .textInput {
+aside .textInput {
     display: flex;
     border-radius: 10px;
     width: 90%;
@@ -682,14 +682,14 @@ section#ContactUs {
     border-style: inset;
 }
 
-.inputDiv .textInput input {
+aside .textInput input {
     height: max-content;
     margin: 0;
     border: none;
     width: -webkit-fill-available;
 }
 
-.inputDiv button {
+aside button {
     font-family: 'Kumar One';
     color: #232931;
     width: 80px;
@@ -712,11 +712,11 @@ section#ContactUs {
         width: 28%;
     }
 
-    .inputDiv input {
+    aside input {
         font-size: 12px;
     }
 
-    .inputDiv .textInput input {
+    aside .textInput input {
         font-size: 12px;
     }
 
@@ -755,20 +755,20 @@ section#ContactUs {
         margin-top: 8px;
     }
 
-    .inputDiv {
+    aside {
         max-width: 810px;
         gap: 12px;
     }
 
-    .inputDiv input {
+    aside input {
         font-size: 15px;
     }
 
-    .inputDiv .textInput {
+    aside .textInput {
         height: 55%;
     }
 
-    .inputDiv .textInput input {
+    aside .textInput input {
         font-size: 15px;
     }
 
@@ -780,7 +780,7 @@ section#ContactUs {
         width: 30%;
     }
 
-    .inputDiv input.textInput {
+    aside input.textInput {
         height: 80%;
     }
 
@@ -802,20 +802,20 @@ section#ContactUs {
         width: 35%;
     }
 
-    .inputDiv {
+    aside {
         margin-top: 20px;
         gap: 15px;
     }
 
-    .inputDiv input {
+    aside input {
         height: 20%;
     }
 
-    .inputDiv .textInput {
+    aside .textInput {
         height: 70%;
     }
 
-    .inputDiv button {
+    aside button {
         font-family: 'Kumar One';
         color: #232931;
         width: 100px;
@@ -830,16 +830,16 @@ section#ContactUs {
 
 @media(min-width:1200px) {
 
-    .inputDiv {
+    aside {
         margin-top: 15px;
         gap: 20px;
     }
 
-    .inputDiv input {
+    aside input {
         height: 30%;
     }
 
-    .inputDiv input.textInput {
+    aside input.textInput {
         height: 90%;
     }
 }
@@ -869,7 +869,7 @@ footer {
 footer a {
     font-family: 'Alike';
     font-size: 10px;
-    color: #FFFFFF;
+    color: var(--foreground3);
     text-decoration: none;
     margin-right: 5px;
 }
@@ -899,7 +899,7 @@ footer hr {
     width: fit-content;
     font-size: 6px;
     text-decoration: underline;
-    color: var(--background2);
+    color: var(--foreground2);
 }
 
 .other img {
